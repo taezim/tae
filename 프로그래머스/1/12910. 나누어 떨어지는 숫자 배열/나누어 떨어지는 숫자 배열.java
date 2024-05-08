@@ -12,14 +12,16 @@ class Solution {
         }
         if(count==0){
             answer = new int[] {-1};
-            return answer;
+            
         }
         
-        answer = new int[count];
-        for(int i=0, j=0; i<arr.length; i++){
-            if(arr[i]%divisor == 0) {
-                answer[j] = arr[i];
-                j++;
+        else{
+                answer = new int[count];
+            for(int i=0, j=0; i<arr.length; i++){
+                if(arr[i]%divisor == 0) {
+                    answer[j] = arr[i];
+                    j++;
+                }
             }
         }
         Arrays.sort(answer);
