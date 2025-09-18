@@ -1,0 +1,2 @@
+-- 코드를 작성해주세요
+select A.ID, A.EMAIL, A.FIRST_NAME, A.LAST_NAME from DEVELOPERS A where SKILL_CODE & (select code from SKILLCODES where name = 'Python') or SKILL_CODE & (select code from SKILLCODES where name = 'C#') order by A.ID;
